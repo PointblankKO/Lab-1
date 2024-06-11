@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recipe.css">
+  <title>Recipe App</title>
+</head>
+
+<body>
+
+
+  <h1>Recipe App</h1>
+
+  <form id="newRecipeForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required><br>
+    <label for="ingredients">Ingredients:</label>
+    <input type="text" id="ingredients" name="ingredients" required><br>
+    <label for="instructions">Instructions:</label>
+    <textarea id="instructions" name="instructions" required></textarea><br>
+    <label for="cookingTime">Cooking Time:</label>
+    <input type="number" id="cookingTime" name="cookingTime" required><br>
+    <button type="submit">Add Recipe</button>
+    <button type="submitEdit">Edit Recipe</button>
+  </form>
+
+
+  <h2>Recipes</h2>
+  <table id="recipesTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Ingredients</th>
+        <th>Instructions</th>
+        <th>Cooking Time</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody></tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="operations.js"></script>
+
+</body>
+
+</html>
